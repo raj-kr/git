@@ -1,0 +1,116 @@
+Window stores default git password and username at this location:
+control panel > user accounts > credential manager > Windows credentials > Generic credentials
+-------------------------------------------------------------
+
+git config
+	//change username, useremail in the global scope
+	git config --global user.name "Rajkumar"
+	git config --global user.email "raj@gmail.com"
+
+	//change username, useremail in the working directory
+	git config user.name "Raj"
+	git config user.email "raj@gmail.com"
+--------------------------------------------
+For pushing into the redined repo
+git push --set-upstream <repo https>
+--------------------------------------------------
+
+git config --list  ||  git config -l
+list out the global veriables set.
+-----------------------------------------
+
+see current global user email and user name
+cat ~/.gitconfig
+----------------------------------------------
+
+Initilize the GIT in the current working directory.
+git init
+----------------------------------
+
+git --version  || git -v
+-----------------------------------
+//add files to the staging area
+git add file_name
+------------------------------------
+
+//add all files to the staging area
+git add .
+------------------------------------
+
+//to push changes
+git add file_name
+git commit -m "remote commit"
+git push
+-----------------------------------
+
+//commit changes in the files.
+git commit -m "changes_commit"
+-----------------------------------
+
+//this command returns the current status of the staged area
+//and returns working branch. if there are no changes it return
+//nothing
+git status
+------------------------------------
+
+
+
+//to add another branch of working other then master
+git branch branch_name	:eg.	feature, security
+--------------------------------------------
+
+//switching to the branch
+git checkout branch_name
+--------------------------------
+
+//to save to the stagin area
+git add .
+--------------------------------
+
+//used for switching to the master
+git checkout master
+-----------------------------------
+
+//used for merging branches to the current branch
+git merge branch_name
+----------------------------------
+
+//delete branch of the given name
+git branch -d branch_name
+-----------------------------------
+
+//delete branch with unmerged changes
+git branch -D branch_name
+----------------------------------
+
+//create a branch and switch to it
+git checkout -b branch_name
+-----------------------------------
+
+//connected local repository with remote repositry.
+git remote add origin "SSH_LINK_GITHUB"
+--------------------------------------
+
+//create a local working copy of the remote repository on your machine
+git clone "SSH_LINK_GITHUB"
+---------------------------------------
+
+//to fetch all the commited changes from the repository
+git pull origin master
+-----------------------------------
+
+//to save changes made when they're not in a state to commit them to repo.
+git stash
+-------------------------------------
+
+//give context and history for a repository.
+git log
+--------------------------------------
+
+//takes a set of commits, copies them and store them outside your repo.
+git rebase
+------------------------------------------
+
+//roll back to the previous version of the file.
+git revert
+-------------------------------------------

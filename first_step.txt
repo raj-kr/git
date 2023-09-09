@@ -1,0 +1,15 @@
+To push first time local changes to repo:
+Step 1:
+--make a git repo on github.
+
+Step 2:
+--git remote add origin <repo_url>
+
+Step 3:
+--git add .
+
+Step 4:
+--git commit -m 'Initial Commit'
+
+Step 5:
+--git push --set-upstream origin master
